@@ -344,10 +344,10 @@ h1, h2, h3, h4, h5, h6 {
 #hero .carousel-item::before {
   content: '';
   background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
-  left: 0;
+  left: 20;
   bottom: 0;
 }
 
@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#hero .carousel-inner .carousel-item {
+/*#hero .carousel-inner .carousel-item {
   transition-property: opacity;
   background-position: center top;
 }
@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-indicators li {
   cursor: pointer;
-}
+}*/
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
@@ -537,6 +537,7 @@ section {
 --------------------------------------------------------------*/
 .cards {
   padding: 40px 0 60px 0;
+  background-color: #f0f4f4;
 }
 
 .cards img {
@@ -585,11 +586,8 @@ section {
   background: #fff;
 }
 
-#services2 {
-  background-color: #fff;
-}
 
-.services2 .icon-box {
+.services .icon-box {
   margin-bottom: 20px;
   padding: 30px;
   border-radius: 6px;
@@ -597,29 +595,29 @@ section {
   
 }
 
-.services .icon-box i, .services2 .icon-box i{
+.services .icon-box i {
   float: left;
   color: #00c1c1;
   font-size: 40px;
 }
 
-.services .icon-box h4, .services2 .icon-box h4  {
+.services .icon-box h4 {
   margin-left: 70px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .icon-box h4 a, .services2 .icon-box h4 a {
+.services .icon-box h4 a {
   color: #334242;
   transition: 0.3s;
 }
 
-.services .icon-box:hover h4 a, .services2 .icon-box:hover h4 a {
+.services .icon-box:hover h4 a {
   color: #00c1c1;
 }
 
-.services .icon-box p, .services2 .icon-box p {
+.services .icon-box p {
   margin-left: 70px;
   line-height: 24px;
   font-size: 14px;
@@ -705,8 +703,6 @@ section {
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
-  border-radius: 4px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio .portfolio-item img {
@@ -714,19 +710,17 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
+  opacity: 100%;
   position: absolute;
   left: 30px;
   right: 30px;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
+  bottom: 10px;
   background: rgba(255, 255, 255, 0.9);
   padding: 15px;
   border-radius: 4px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.portfolio .portfolio-item .portfolio-info h5 {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
@@ -779,7 +773,7 @@ section {
 
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 /*--------------------------------------------------------------
